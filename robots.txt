@@ -1,1 +1,1 @@
-Sitemap: https://fastpages.fast.ai/sitemap.xml
+Sitemap: https://peacekeeper6.github.io/fastpages/sitemap.xml
