@@ -5,6 +5,8 @@ permalink: /about/
 ---
 THIS IS A MARKDOWN TEST.
 
+NOW THIS IS A MARKDOWN COMMIT TEST USING VSCODE.
+
 This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
 
 
