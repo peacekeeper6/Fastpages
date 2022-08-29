@@ -294,39 +294,39 @@ Enter a String:
     <span class="n">input</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
     <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Enter a Player: "</span> <span class="o">+</span> <span class="n">System</span><span class="p">.</span><span class="na">lineSeparator</span><span class="p">());</span> <span class="c1">// personal note: do not use ln when making input</span>
     <span class="n">String</span> <span class="n">name</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span>
-    <span class="c1">// try {</span>
-    <span class="c1">//     String sampleInputString = input.nextLine();</span>
-    <span class="c1">//     System.out.println("Nice choice, unless you chose Steph Curry");</span>
-    <span class="c1">// } catch (Exception e) {</span>
-    <span class="c1">//     System.out.println("Not a name");</span>
-    <span class="c1">// }</span>
+    <span class="k">try</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Nice choice, unless you chose Steph Curry"</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">Exception</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Not a name"</span><span class="p">);</span>
+    <span class="p">}</span>
     <span class="n">input</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
 
-    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Get ready to break out the Google..."</span> <span class="o">+</span> <span class="n">System</span><span class="p">.</span><span class="na">lineSeparator</span><span class="p">());</span>
-
-    <span class="n">input</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
-    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"How many games did your player play?"</span> <span class="o">+</span> <span class="n">System</span><span class="p">.</span><span class="na">lineSeparator</span><span class="p">());</span>
-    <span class="kt">int</span> <span class="n">games</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
-    <span class="c1">// try {</span>
-    <span class="c1">//     int gamesInputInt = input.nextInt();</span>
-    <span class="c1">//     System.out.println(gamesInputInt);</span>
-    <span class="c1">// } catch (Exception e) {</span>
-    <span class="c1">//     System.out.println("Not a number");</span>
-    <span class="c1">// }</span>
-    <span class="n">input</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Get ready to break out the Google..."</span><span class="p">);</span>
 
     <span class="n">input</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
     <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"How many total points did your player score?"</span> <span class="o">+</span> <span class="n">System</span><span class="p">.</span><span class="na">lineSeparator</span><span class="p">());</span>
-    <span class="kt">int</span> <span class="n">points</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
-    <span class="c1">// try {</span>
-    <span class="c1">//     int pointsInputInt = input.nextInt();</span>
-    <span class="c1">//     System.out.println(pointsInputInt);</span>
-    <span class="c1">// } catch (Exception e) {</span>
-    <span class="c1">//     System.out.println("Not a number");</span>
-    <span class="c1">// }</span>
+    <span class="kt">double</span> <span class="n">points</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+    <span class="k">try</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Not bad"</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">Exception</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Not a number"</span><span class="p">);</span>
+    <span class="p">}</span>
     <span class="n">input</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
 
-    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">name</span> <span class="o">+</span> <span class="s">" averaged "</span> <span class="o">+</span> <span class="n">points</span><span class="o">/</span><span class="n">games</span> <span class="o">+</span> <span class="s">" points a game"</span><span class="p">);</span>
+    <span class="n">input</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"How many games did your player play?"</span> <span class="o">+</span> <span class="n">System</span><span class="p">.</span><span class="na">lineSeparator</span><span class="p">());</span>
+    <span class="kt">double</span> <span class="n">games</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+    <span class="k">try</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"That's a lot"</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">Exception</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Not a number"</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="n">input</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
+
+    <span class="kt">double</span> <span class="n">PPG</span> <span class="o">=</span> <span class="n">points</span><span class="o">/</span><span class="n">games</span><span class="p">;</span>
+    <span class="kt">double</span> <span class="n">rounded</span> <span class="o">=</span> <span class="n">Math</span><span class="p">.</span><span class="na">round</span><span class="p">(</span><span class="n">PPG</span> <span class="o">*</span> <span class="mf">10.0</span><span class="p">)</span> <span class="o">/</span> <span class="mf">10.0</span><span class="p">;</span>
+
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">name</span> <span class="o">+</span> <span class="s">" averaged "</span> <span class="o">+</span> <span class="n">rounded</span> <span class="o">+</span> <span class="s">" points a game"</span><span class="p">);</span>
     <span class="p">}</span>
 <span class="p">}</span>
 <span class="n">ScanPPG</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
@@ -343,11 +343,13 @@ Enter a String:
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Enter a Player: 
+Nice choice, unless you chose Steph Curry
 Get ready to break out the Google...
-
-How many games did your player play?
 How many total points did your player score?
-Paul George averaged 24 points a game
+Not bad
+How many games did your player play?
+That's a lot
+Paul George averaged 24.3 points a game
 </pre>
 </div>
 </div>
