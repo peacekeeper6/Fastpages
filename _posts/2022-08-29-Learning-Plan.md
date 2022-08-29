@@ -43,7 +43,6 @@ This is where I will be capturing my learning in CSA. I will be capturing inform
 
 ## Unit 10 - Recursion<a name="unit10"></a>
 
----
 
 # Table of Contents by Weeks (PBL)
 1. [Week 0](#week1)
