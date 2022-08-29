@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      5 min read
     
 </span></p>
 
@@ -127,6 +127,8 @@ window.onload = wrap_img;
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
 <li class="toc-entry toc-h1"><a href="#Wrapper-Classes">Wrapper Classes </a></li>
+<li class="toc-entry toc-h1"><a href="#Code.org">Code.org </a></li>
+<li class="toc-entry toc-h1"><a href="#Casting">Casting </a></li>
 <li class="toc-entry toc-h1"><a href="#Hack">Hack </a></li>
 </ul><!--
 #################################################
@@ -246,12 +248,152 @@ Enter a String:
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Code.org">
+<a class="anchor" href="#Code.org" aria-hidden="true"><span class="octicon octicon-link"></span></a>Code.org<a class="anchor-link" href="#Code.org"> </a>
+</h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="kt">double</span> <span class="n">c</span> <span class="o">=</span> <span class="mf">2.5</span><span class="p">;</span>
+<span class="n">c</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">a</span> <span class="o">-</span> <span class="mi">15</span> <span class="o">/</span> <span class="n">b</span> <span class="o">+</span> <span class="n">c</span><span class="p">;</span>
+
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Result: "</span> <span class="o">+</span> <span class="n">c</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Result: 7.5
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Casting">
+<a class="anchor" href="#Casting" aria-hidden="true"><span class="octicon octicon-link"></span></a>Casting<a class="anchor-link" href="#Casting"> </a>
+</h1>
+<blockquote>
+<p>Used in Java to change data types of variables</p>
+<ul>
+<li>Doubles are rounded to the nearest integer (int) (x + 0.5) or (int) (x - 0.5) for negative numbers</li>
+</ul>
+</blockquote>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Casting</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span> <span class="p">(</span><span class="mi">6</span><span class="o">/</span><span class="mi">4</span> <span class="o">+</span> <span class="s">" - produced because int/int"</span><span class="p">);</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="mf">6.0</span><span class="o">/</span><span class="mi">4</span> <span class="o">+</span> <span class="s">" - produced because double/int"</span><span class="p">)</span> <span class="p">;</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="mi">6</span><span class="o">/</span><span class="mf">4.0</span> <span class="o">+</span> <span class="s">" - produced because int/double"</span><span class="p">);</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">((</span><span class="kt">double</span><span class="p">)</span> <span class="mi">6</span><span class="o">/</span><span class="mi">4</span> <span class="o">+</span> <span class="s">" - produced because double/int"</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">ex1</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kt">double</span> <span class="n">a</span> <span class="o">=</span> <span class="mf">13.124</span><span class="p">;</span>
+        <span class="c1">// int b = a; &lt;- This result would not be produced because double to int conversion results in loss/truncation of numbers</span>
+        <span class="c1">// System.out.println(b);</span>
+    <span class="p">}</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">ex2</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// int a = 6.75; </span>
+        <span class="c1">// int b = 124;</span>
+        <span class="c1">// System.out.println(a + b); &lt;- Thus, this result is not possible using the compiler. However, doing this manually would result in 131 because rounding is needed for ints. </span>
+    <span class="p">}</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">ex3</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">82</span><span class="p">;</span>
+        <span class="kt">double</span> <span class="n">b</span> <span class="o">=</span> <span class="mf">12.2</span><span class="p">;</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">a</span> <span class="o">-</span> <span class="n">b</span> <span class="o">+</span> <span class="s">" - This result is possible because the number turns into a double, meaning that there is no truncation"</span><span class="p">);</span> 
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">Casting</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+<span class="n">Casting</span><span class="p">.</span><span class="na">ex1</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+<span class="n">Casting</span><span class="p">.</span><span class="na">ex2</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+<span class="n">Casting</span><span class="p">.</span><span class="na">ex3</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1 - produced because int/int
+1.5 - produced because double/int
+1.5 - produced because int/double
+1.5 - produced because double/int
+69.8 - This result is possible because the number turns into a double, meaning that there is no truncation
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Hack">
 <a class="anchor" href="#Hack" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hack<a class="anchor-link" href="#Hack"> </a>
 </h1>
 <blockquote>
 <p>Points per game, PPG, calculator</p>
 </blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>int is used for points, regular season games, and playoff games, which is necessary because these can only be whole numbers</li>
+<li>double is used to calculate PPG, which can have decimals in it. Math function is used to limit number of decimals to standard usage</li>
+<li>boolean is necessary to ensure player is using google for questions following</li>
+<li>string is necessary for player name</li>
+<li>For results, double is used to create a number with decimal, which is the standard for calculating PPG in NBA. Thus, things like integer would be unncessary because they are not the standard</li>
+<li>Compound assignment operator used in calculating total games played, regular season + playoffs, in order to get total points/games for PPG calculation</li>
+</ul>
+<p>Perform arithmetic expressions and assignment in a program code Code.org Lesson</p>
+<p>Determine what is result is in a variable as a result of an data type and expression (ie integer vs double)
+Perform an arithmetic expressions that uses casting, add comments that show how it produces desired result. Learn more by watching this College Board video</p>
 
 </div>
 </div>
@@ -270,7 +412,7 @@ Enter a String:
     <span class="n">Scanner</span> <span class="n">input</span><span class="p">;</span>
 
     <span class="n">input</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
-    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Enter a Player: "</span> <span class="o">+</span> <span class="n">System</span><span class="p">.</span><span class="na">lineSeparator</span><span class="p">());</span> <span class="c1">// personal note: do not use ln when making input</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Enter a Player"</span> <span class="o">+</span> <span class="n">System</span><span class="p">.</span><span class="na">lineSeparator</span><span class="p">());</span> <span class="c1">// personal note: do not use ln when making input</span>
     <span class="n">String</span> <span class="n">name</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span>
     <span class="k">try</span> <span class="p">{</span>
         <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Nice choice, unless you chose Steph Curry"</span><span class="p">);</span>
@@ -279,11 +421,19 @@ Enter a String:
     <span class="p">}</span>
     <span class="n">input</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
 
-    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Get ready to break out the Google..."</span><span class="p">);</span>
+    <span class="n">input</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"True or false: you have Google open right now"</span> <span class="o">+</span> <span class="n">System</span><span class="p">.</span><span class="na">lineSeparator</span><span class="p">());</span>
+    <span class="kt">boolean</span> <span class="n">resp</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="na">nextBoolean</span><span class="p">();</span>
+    <span class="k">try</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Google will be important..."</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">Exception</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Not true/false"</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="n">input</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
 
     <span class="n">input</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
-    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"How many total points did your player score?"</span> <span class="o">+</span> <span class="n">System</span><span class="p">.</span><span class="na">lineSeparator</span><span class="p">());</span>
-    <span class="kt">double</span> <span class="n">points</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"How many total points did your player score (counting playoffs)?"</span> <span class="o">+</span> <span class="n">System</span><span class="p">.</span><span class="na">lineSeparator</span><span class="p">());</span>
+    <span class="kt">int</span> <span class="n">points</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span> 
     <span class="k">try</span> <span class="p">{</span>
         <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Not bad"</span><span class="p">);</span>
     <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">Exception</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
@@ -292,13 +442,24 @@ Enter a String:
     <span class="n">input</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
 
     <span class="n">input</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
-    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"How many games did your player play?"</span> <span class="o">+</span> <span class="n">System</span><span class="p">.</span><span class="na">lineSeparator</span><span class="p">());</span>
-    <span class="kt">double</span> <span class="n">games</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"How many games did your player play in the regular season?"</span> <span class="o">+</span> <span class="n">System</span><span class="p">.</span><span class="na">lineSeparator</span><span class="p">());</span>
+    <span class="kt">int</span> <span class="n">games</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
     <span class="k">try</span> <span class="p">{</span>
         <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"That's a lot"</span><span class="p">);</span>
     <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">Exception</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
         <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Not a number"</span><span class="p">);</span>
     <span class="p">}</span>
+    <span class="n">input</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
+
+    <span class="n">input</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"If your player made the playoffs, how many games did they play there?"</span> <span class="o">+</span> <span class="n">System</span><span class="p">.</span><span class="na">lineSeparator</span><span class="p">());</span>
+    <span class="kt">int</span> <span class="n">playoffgames</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+    <span class="k">try</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Total generating..."</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">Exception</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Not a number"</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="n">games</span> <span class="o">+=</span> <span class="n">playoffgames</span><span class="p">;</span> <span class="c1">//result is playoff games being added to regular season games</span>
     <span class="n">input</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
 
     <span class="kt">double</span> <span class="n">PPG</span> <span class="o">=</span> <span class="n">points</span><span class="o">/</span><span class="n">games</span><span class="p">;</span>
@@ -320,14 +481,17 @@ Enter a String:
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Enter a Player: 
+<pre>Enter a Player
 Nice choice, unless you chose Steph Curry
-Get ready to break out the Google...
-How many total points did your player score?
+True or false: you have Google open right now
+Google will be important...
+How many total points did your player score (counting playoffs)?
 Not bad
-How many games did your player play?
+How many games did your player play in the regular season?
 That's a lot
-Paul George averaged 24.3 points a game
+If your player made the playoffs, how many games did they play there?
+Total generating...
+Paul George averaged 24.0 points a game
 </pre>
 </div>
 </div>
