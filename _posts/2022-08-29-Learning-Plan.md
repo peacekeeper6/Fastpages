@@ -10,6 +10,41 @@ This is where I will be capturing my learning in CSA. I will be capturing inform
 
 ---
 
+# Table of Contents by Units (CB Learning)
+1. [Unit 1 - Primitive Types](#unit1)
+2. [Unit 2 - Using Objects](#unit2)
+3. [Unit 3 - Boolean Expressions and if Statements](#unit3)
+4. [Unit 4 - Iteration](#unit4)
+5. [Unit 5 - Writing Classes](#unit5)
+6. [Unit 6 - Array](#unit6)
+7. [Unit 7 - Arrayist](#unit7)
+8. [Unit 8 - 2D Array](#unit8)
+9. [Unit 9 - Inheritance](#unit9)
+10. [Unit 10 - Recursion](#unit10)
+
+## Unit 1 - Primitive Types<a name="unit1"></a>
+### - <a href="https://peacekeeper6.github.io/fastpages/primitives/2022/08/24/primitives.html">Primitives Notebook</a>
+
+## Unit 2 - Using Objects<a name="unit2"></a>
+
+## Unit 3 - Boolean Expressions and if Statements<a name="unit3"></a>
+
+## Unit 4 - Iteration<a name="unit4"></a>
+
+## Unit 5 - Writing Classes<a name="unit5"></a>
+
+## Unit 6 - Array<a name="unit6"></a>
+
+## Unit 7 - Arrayist<a name="unit7"></a>
+
+## Unit 8 - 2D Array<a name="unit8"></a>
+
+## Unit 9 - Inheritance<a name="unit9"></a>
+
+## Unit 10 - Recursion<a name="unit10"></a>
+
+---
+
 # Table of Contents by Weeks (PBL)
 1. [Week 0](#week1)
 2. [Week 1](#week2)
@@ -55,37 +90,3 @@ This is where I will be capturing my learning in CSA. I will be capturing inform
 
 ## Week 11<a name="week12"></a>
 
----
-
-# Table of Contents by Units (CB Learning)
-1. [Unit 1 - Primitive Types](#unit1)
-2. [Unit 2 - Using Objects](#unit2)
-3. [Unit 3 - Boolean Expressions and if Statements](#unit3)
-4. [Unit 4 - Iteration](#unit4)
-5. [Unit 5 - Writing Classes](#unit5)
-6. [Unit 6 - Array](#unit6)
-7. [Unit 7 - Arrayist](#unit7)
-8. [Unit 8 - 2D Array](#unit8)
-9. [Unit 9 - Inheritance](#unit9)
-10. [Unit 10 - Recursion](#unit10)
-
-## Unit 1 - Primitive Types<a name="unit1"></a>
-### - <a href="https://peacekeeper6.github.io/fastpages/primitives/2022/08/24/primitives.html">Primitives Notebook</a>
-
-## Unit 2 - Using Objects<a name="unit2"></a>
-
-## Unit 3 - Boolean Expressions and if Statements<a name="unit3"></a>
-
-## Unit 4 - Iteration<a name="unit4"></a>
-
-## Unit 5 - Writing Classes<a name="unit5"></a>
-
-## Unit 6 - Array<a name="unit6"></a>
-
-## Unit 7 - Arrayist<a name="unit7"></a>
-
-## Unit 8 - 2D Array<a name="unit8"></a>
-
-## Unit 9 - Inheritance<a name="unit9"></a>
-
-## Unit 10 - Recursion<a name="unit10"></a>
