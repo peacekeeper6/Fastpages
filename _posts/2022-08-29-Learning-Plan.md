@@ -5,7 +5,7 @@ description: CSA Learning Plan
 categories: [markdown]
 title: Learning Plan
 ---
-### This is where I will be capturing my learning in CSA. I am able to recognize whether something is PBL or meeting CB Requirements by looking at both the Canvas assignment descriptions and the CB videos. Knowing that something we are doing is not part of CB will make me put it in the second Table of Contents.
+### This is where I will be capturing my learning in CSA. I will be capturing information for all 10 CB Units through notes in tangible assignments we have done, as well as additional notes if needed. I am able to recognize whether something is PBL or meeting CB Requirements by looking at both the Canvas assignment descriptions and the CB videos. Knowing that something we are doing is not part of CB will make me put it in the second Table of Contents.
 
 
 # Table of Contents by Units (CB Learning)
