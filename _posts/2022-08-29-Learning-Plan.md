@@ -3,6 +3,7 @@ toc: true
 layout: post
 description: CSA Learning Plan
 categories: [markdown]
+image: images/tools.png
 title: Learning Plan
 ---
 
