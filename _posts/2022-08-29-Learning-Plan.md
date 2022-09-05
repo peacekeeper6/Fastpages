@@ -3,6 +3,7 @@ toc: true
 layout: post
 description: CSA Learning Plan
 categories: [markdown]
+image: images/tools.png
 title: Learning Plan
 ---
 
@@ -60,7 +61,7 @@ This is where I will be capturing my learning in CSA. I will be capturing inform
 12. [Week 11](#week12)
 
 
-** Week 0 **<a name="week1"></a>
+**Week 0**<a name="week1"></a>
 - <a href="https://peacekeeper6.github.io/fastpages/python/2022/08/22/pythonnb.html">Python Notebook</a>
 - <a href="https://peacekeeper6.github.io/fastpages/java/2022/08/22/javanb.html">Java Notebook</a>
 - <a href="https://github.com/peacekeeper6/fastpages/issues/3">Hacks</a>
