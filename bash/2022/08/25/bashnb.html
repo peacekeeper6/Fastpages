@@ -350,28 +350,28 @@ Committing changes...
 <span class="k">if</span> <span class="o">[</span> ! -d <span class="nv">$PYTHON2</span> <span class="o">]</span>
 <span class="k">then</span>
     <span class="nb">echo</span> <span class="s2">"Downloading Python2"</span>
-    <span class="c1"># sudo apt install python2</span>
+    sudo apt install python2
 <span class="k">fi</span>
 <span class="nb">echo</span> <span class="s2">"Python2 exists"</span>
 <span class="nb">echo</span> <span class="s2">"Checking for Python3..."</span>
 <span class="k">if</span> <span class="o">[</span> ! -d <span class="nv">$PYTHON3</span> <span class="o">]</span>
 <span class="k">then</span>
     <span class="nb">echo</span> <span class="s2">"Downloading Python3"</span>
-    <span class="c1"># sudo apt install python3</span>
+    sudo apt install python3
 <span class="k">fi</span>
 <span class="nb">echo</span> <span class="s2">"Python3 exists"</span>
 <span class="nb">echo</span> <span class="s2">"Checking for Java..."</span>
 <span class="k">if</span> <span class="o">[</span> ! -d <span class="nv">$JAVA</span> <span class="o">]</span>
 <span class="k">then</span>
     <span class="nb">echo</span> <span class="s2">"Downloading Java"</span>
-    <span class="c1"># sudo apt install default-jdk</span>
+    sudo apt install default-jdk
 <span class="k">fi</span>
 <span class="nb">echo</span> <span class="s2">"Java exists"</span>
 <span class="nb">echo</span> <span class="s2">"Checking for Javac"</span>
 <span class="k">if</span> <span class="o">[</span> ! -d <span class="nv">$JAVAC</span> <span class="o">]</span>
 <span class="k">then</span> 
     <span class="nb">echo</span> <span class="s2">"Downloading Javac"</span>
-    <span class="c1"># sudo apt install default-jre</span>
+    sudo apt install default-jre
 <span class="k">fi</span>
 <span class="c1"># sudo apt install unzip</span>
 </pre></div>
@@ -386,7 +386,18 @@ Committing changes...
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[sudo] password for junlim954: 
+<pre>Python 2.7.18
+Checking for Python2...
+Python2 exists
+Checking for Python3...
+bash: [: Python: binary operator expected
+Python3 exists
+Checking for Java...
+bash: [: too many arguments
+Java exists
+Checking for Javac
+bash: [: javac: binary operator expected
+[sudo] password for junlim954: 
 </pre>
 </div>
 </div>
