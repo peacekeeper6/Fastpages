@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "Code.org",
-            "content": "Code.org Learnings . . . Code.org helped me realize that objects can be created and used | Once they are created, they can be used in other files/locations by being called and extended | . . . In this example, the PatternPainter object is created in a separate file and extends the Painter object from myNeighborhood. | Important to objects that are extended are higher-up. Ex: tacos extends food | . . . Then, myNeighborhood takes the PatternPainter object and creates a new instance of it, which allows it to be used as an object | Shown here, methods are being used with the newly instantiated object | .",
+            "content": "Code.org Learnings . . Code.org helped me realize that objects can be created and used | Once they are created, they can be used in other files/locations by being called and extended | . . In this example, the PatternPainter object is created in a separate file and extends the Painter object from myNeighborhood. | Important to objects that are extended are higher-up. Ex: tacos extends food | . . Then, myNeighborhood takes the PatternPainter object and creates a new instance of it, which allows it to be used as an object | Shown here, methods are being used with the newly instantiated object | .",
             "url": "https://peacekeeper6.github.io/fastpages/code.org/2022/09/05/Code-Org.html",
             "relUrl": "/code.org/2022/09/05/Code-Org.html",
             "date": " • Sep 5, 2022"
