@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      6 min read
+      7 min read
     
 </span></p>
 
@@ -126,6 +126,7 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#Use-of-objects-and-classes">Use of objects and classes </a></li>
 <li class="toc-entry toc-h1"><a href="#Java-Menu-for-Physics---Milligrams-to-other-measurements">Java Menu for Physics - Milligrams to other measurements </a></li>
 <li class="toc-entry toc-h1"><a href="#Java-GUI">Java GUI </a></li>
 </ul><!--
@@ -137,6 +138,86 @@ window.onload = wrap_img;
 
 <div class="container" id="notebook-container">
         
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Use-of-objects-and-classes">
+<a class="anchor" href="#Use-of-objects-and-classes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Use of objects and classes<a class="anchor-link" href="#Use-of-objects-and-classes"> </a>
+</h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// import packages</span>
+<span class="kn">import</span> <span class="nn">org.code.neighborhood.*</span><span class="p">;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// Defining a class called MyNeighborhood</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">MyNeighborhood</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// creating an instance of PainterPlus() with variable name myBackgroundPainter</span>
+        <span class="n">PainterPlus</span> <span class="n">myPainterPlus</span> <span class="o">=</span> <span class="k">new</span> <span class="n">PainterPlus</span><span class="p">();</span>
+        <span class="c1">// Running turnRight() method from PainterPlus instance</span>
+        <span class="n">myPainterPlus</span><span class="p">.</span><span class="na">turnRight</span><span class="p">();</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// Creating subclass of PainterPlus which inherits attributes from superclass Painter</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">PainterPlus</span> <span class="kd">extends</span> <span class="n">Painter</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="nf">PainterPlus</span><span class="p">()</span> <span class="p">{</span>
+      <span class="kd">super</span><span class="p">();</span>
+    <span class="p">}</span>
+    <span class="c1">// Defining public turnRight() method with no return types in PainterPlus class</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">turnRight</span><span class="p">()</span> <span class="p">{</span>
+      <span class="n">turnLeft</span><span class="p">();</span>
+      <span class="n">turnLeft</span><span class="p">();</span>
+      <span class="n">turnLeft</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
