@@ -1,0 +1,28 @@
+---
+toc: true
+layout: post
+description: Code.Org learnings
+categories: [code.org]
+title: Code.org
+---
+# Hacks
+
+## Fastpages
+![]({{ site.baseurl }}/images/codeorg.png "Code.org lesson 15")
+![Code.org](/images/codeorg.PNG "Code.org lesson 15")
+
+- Code.org helped me realize that objects can be created and used
+- Once they are created, they can be used in other files/locations by being called and extended
+
+![Code.org](/images/lf.PNG "Code.org PatternPainter")
+
+![Code.org](/images/neighborhood.PNG "Code.org Neighborhood")
+
+
+- ![]({{ site.baseurl }}/images/fastpagesvscode.png "Fastpages running on VS Code")
+- [Github Insights for Fastpages](https://github.com/peacekeeper6/fastpages/graphs/commit-activity)
+- [Github Insights for Java Project](https://github.com/peacekeeper6/spring-portfolio/graphs/commit-activity)
+
+## Java Project
+- ![]({{ site.baseurl }}/images/java.png "Java Project running on localhost")
+- [First commit](https://github.com/peacekeeper6/spring-portfolio/commit/84f048ead4d50ae1937714d577f81196e76efa6f)
