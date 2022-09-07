@@ -431,7 +431,6 @@ That is equivalent to 1.0E-8 megagrams.
 <span class="kn">import</span> <span class="nn">javax.swing.*</span><span class="p">;</span>
 <span class="kn">import</span> <span class="nn">java.util.Timer</span><span class="p">;</span>
 <span class="kn">import</span> <span class="nn">java.util.TimerTask</span><span class="p">;</span>
-<span class="kn">import</span> <span class="nn">java.swing.TextField</span><span class="p">;</span>
 
 <span class="c1">// Graphical-User-Interface for Desktop in Java using Java Swing. </span>
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">MenuJFrame</span> <span class="kd">extends</span> <span class="n">JFrame</span> <span class="kd">implements</span> <span class="n">ActionListener</span> <span class="p">{</span>
@@ -484,11 +483,11 @@ That is equivalent to 1.0E-8 megagrams.
         <span class="kd">final</span> <span class="n">String</span><span class="o">[]</span> <span class="n">COLORS</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Red"</span><span class="p">,</span> <span class="s">"Green"</span><span class="p">,</span> <span class="s">"Blue"</span><span class="p">};</span>  <span class="c1">// add more colors here</span>
  	    <span class="kd">final</span> <span class="n">String</span> <span class="n">start_msg</span> <span class="o">=</span> <span class="s">"&lt;html&gt;"</span><span class="p">;</span>  <span class="c1">// html building</span>
        	<span class="kd">final</span> <span class="n">String</span> <span class="n">end_msg</span> <span class="o">=</span> <span class="s">"&lt;/html&gt;"</span><span class="p">;</span>
-       	<span class="kd">final</span> <span class="n">String</span> <span class="n">hash</span> <span class="o">=</span> <span class="s">"#"</span><span class="p">;</span>
+       	<span class="kd">final</span> <span class="n">String</span> <span class="n">hash</span> <span class="o">=</span> <span class="s">"/"</span><span class="p">;</span>
 
         <span class="c1">// run code based on the menuItem that was selected</span>
         <span class="k">if</span> <span class="p">(</span> <span class="n">selection</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">MENUS</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">)</span> <span class="p">)</span> <span class="p">{</span>  <span class="c1">// Hello Action</span>
-            <span class="n">msg</span> <span class="o">=</span> <span class="s">"Hello, World"</span><span class="p">;</span>
+            <span class="n">msg</span> <span class="o">=</span> <span class="s">"Hello, CSA"</span><span class="p">;</span>
             <span class="n">message</span><span class="p">.</span><span class="na">setText</span><span class="p">(</span><span class="n">msg</span><span class="p">);</span>
         <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span> <span class="n">selection</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">MENUS</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span><span class="p">)</span> <span class="p">)</span> <span class="p">{</span> <span class="c1">// Color Action</span>
             <span class="n">msg</span> <span class="o">=</span> <span class="n">start_msg</span> <span class="o">+</span> <span class="s">"&lt;p&gt;"</span> <span class="o">+</span> <span class="n">selection</span> <span class="o">+</span> <span class="s">"&lt;/p&gt;"</span><span class="p">;</span>
@@ -535,6 +534,20 @@ That is equivalent to 1.0E-8 megagrams.
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+The Kernel crashed while executing code in the the current cell or a previous cell. Please review the code in the cell(s) to identify a possible cause of the failure. Click &lt;a href='https://aka.ms/vscodeJupyterKernelCrash'&gt;here&lt;/a&gt; for more info. View Jupyter &lt;a href='command:jupyter.viewOutput'&gt;log&lt;/a&gt; for further details.</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -547,7 +560,7 @@ That is equivalent to 1.0E-8 megagrams.
 <p>My takeaways:</p>
 <ul>
 <li>Multiple inputs are unable to be accepted</li>
-<li>JTextField used to get inputs. This will be needed to accept inputs for a calculator</li>
+<li>JTextField used to get inputs. This will be needed to accept inputs for a calculator unless a bunch of buttons are used</li>
 <li>"msg" object is used. Thus methods must be based around this object, so things made with Scanner cannot just be copy and pasted over</li>
 <li>"implements" used in constructor signature. These are used to implement an interface; extends cannot replace it here</li>
 <li>Need to read up on Swing documentation. There is a lot more to be learned before randomly attempting something and failing</li>
