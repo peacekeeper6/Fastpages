@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>RapidAPI Notebook | Jun’s Fastpages</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="RapidAPI Notebook" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="RapidAPI" />
+<meta property="og:description" content="RapidAPI" />
+<link rel="canonical" href="https://peacekeeper6.github.io/fastpages/jupyter/2022/10/02/rapidapi.html" />
+<meta property="og:url" content="https://peacekeeper6.github.io/fastpages/jupyter/2022/10/02/rapidapi.html" />
+<meta property="og:site_name" content="Jun’s Fastpages" />
+<meta property="og:image" content="https://peacekeeper6.github.io/fastpages/images/tools.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-10-02T00:00:00-05:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://peacekeeper6.github.io/fastpages/images/tools.png" />
+<meta property="twitter:title" content="RapidAPI Notebook" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-10-02T00:00:00-05:00","datePublished":"2022-10-02T00:00:00-05:00","description":"RapidAPI","headline":"RapidAPI Notebook","image":"https://peacekeeper6.github.io/fastpages/images/tools.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://peacekeeper6.github.io/fastpages/jupyter/2022/10/02/rapidapi.html"},"url":"https://peacekeeper6.github.io/fastpages/jupyter/2022/10/02/rapidapi.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/fastpages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://peacekeeper6.github.io/fastpages/feed.xml" title="Jun's Fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/fastpages/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/fastpages/">Jun&#39;s Fastpages</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/fastpages/about/">About Me</a><a class="page-link" href="/fastpages/search/">Search</a><a class="page-link" href="/fastpages/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">RapidAPI Notebook</h1><p class="page-description">RapidAPI</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-10-02T00:00:00-05:00" itemprop="datePublished">
+        Oct 2, 2022
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      2 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/fastpages/categories/#jupyter">jupyter</a>
+        
+      
+      </p>
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/peacekeeper6/fastpages/tree/master/_notebooks/2022-10-2-rapidapi.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/fastpages/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/peacekeeper6/fastpages/master?filepath=_notebooks%2F2022-10-2-rapidapi.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/fastpages/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/peacekeeper6/fastpages/blob/master/_notebooks/2022-10-2-rapidapi.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/fastpages/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2Fpeacekeeper6%2Ffastpages%2Fblob%2Fmaster%2F_notebooks%2F2022-10-2-rapidapi.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/fastpages/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2022-10-2-rapidapi.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.net.URI</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.net.http.HttpClient</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.net.http.HttpRequest</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.net.http.HttpResponse</span><span class="p">;</span>
+
+<span class="c1">//RapidAPI header  https://rapidapi.com/spamakashrajtech/api/corona-virus-world-and-india-data</span>
+<span class="n">HttpRequest</span> <span class="n">request</span> <span class="o">=</span> <span class="n">HttpRequest</span><span class="p">.</span><span class="na">newBuilder</span><span class="p">()</span>
+    <span class="p">.</span><span class="na">uri</span><span class="p">(</span><span class="n">URI</span><span class="p">.</span><span class="na">create</span><span class="p">(</span><span class="s">"https://corona-virus-world-and-india-data.p.rapidapi.com/api"</span><span class="p">))</span>
+    <span class="p">.</span><span class="na">header</span><span class="p">(</span><span class="s">"x-rapidapi-key"</span><span class="p">,</span> <span class="s">"dec069b877msh0d9d0827664078cp1a18fajsn2afac35ae063"</span><span class="p">)</span>
+    <span class="p">.</span><span class="na">header</span><span class="p">(</span><span class="s">"x-rapidapi-host"</span><span class="p">,</span> <span class="s">"corona-virus-world-and-india-data.p.rapidapi.com"</span><span class="p">)</span>
+    <span class="p">.</span><span class="na">method</span><span class="p">(</span><span class="s">"GET"</span><span class="p">,</span> <span class="n">HttpRequest</span><span class="p">.</span><span class="na">BodyPublishers</span><span class="p">.</span><span class="na">noBody</span><span class="p">())</span>
+    <span class="p">.</span><span class="na">build</span><span class="p">();</span>
+
+<span class="c1">//RapidAPI request and response</span>
+<span class="n">HttpResponse</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">response</span> <span class="o">=</span> <span class="n">HttpClient</span><span class="p">.</span><span class="na">newHttpClient</span><span class="p">().</span><span class="na">send</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">HttpResponse</span><span class="p">.</span><span class="na">BodyHandlers</span><span class="p">.</span><span class="na">ofString</span><span class="p">());</span>
+
+<span class="c1">//RapidAPI Body</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">response</span><span class="p">.</span><span class="na">body</span><span class="p">());</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.net.URI</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.net.http.HttpClient</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.net.http.HttpRequest</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.net.http.HttpResponse</span><span class="p">;</span>
+
+<span class="n">HttpRequest</span> <span class="n">request</span> <span class="o">=</span> <span class="n">HttpRequest</span><span class="p">.</span><span class="na">newBuilder</span><span class="p">()</span>
+		<span class="p">.</span><span class="na">uri</span><span class="p">(</span><span class="n">URI</span><span class="p">.</span><span class="na">create</span><span class="p">(</span><span class="s">"https://spotify-top-charts-2022.p.rapidapi.com/spotify_top_charts_22"</span><span class="p">))</span>
+		<span class="p">.</span><span class="na">header</span><span class="p">(</span><span class="s">"X-RapidAPI-Key"</span><span class="p">,</span> <span class="s">"9e4650470emshc2461cc01c07b29p18b9b5jsnfa759ab87fca"</span><span class="p">)</span>
+		<span class="p">.</span><span class="na">header</span><span class="p">(</span><span class="s">"X-RapidAPI-Host"</span><span class="p">,</span> <span class="s">"spotify-top-charts-2022.p.rapidapi.com"</span><span class="p">)</span>
+		<span class="p">.</span><span class="na">method</span><span class="p">(</span><span class="s">"GET"</span><span class="p">,</span> <span class="n">HttpRequest</span><span class="p">.</span><span class="na">BodyPublishers</span><span class="p">.</span><span class="na">noBody</span><span class="p">())</span>
+		<span class="p">.</span><span class="na">build</span><span class="p">();</span>
+<span class="n">HttpResponse</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">response</span> <span class="o">=</span> <span class="n">HttpClient</span><span class="p">.</span><span class="na">newHttpClient</span><span class="p">().</span><span class="na">send</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">HttpResponse</span><span class="p">.</span><span class="na">BodyHandlers</span><span class="p">.</span><span class="na">ofString</span><span class="p">());</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">response</span><span class="p">.</span><span class="na">body</span><span class="p">());</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{"code":"ERROR_CODE_NOT_FOUND","message":"This workspace no longer exists."}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.net.URI</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.net.http.HttpClient</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.net.http.HttpRequest</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.net.http.HttpResponse</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.util.Random</span><span class="p">;</span>
+
+<span class="n">HttpRequest</span> <span class="n">request</span> <span class="o">=</span> <span class="n">HttpRequest</span><span class="p">.</span><span class="na">newBuilder</span><span class="p">()</span>
+		<span class="p">.</span><span class="na">uri</span><span class="p">(</span><span class="n">URI</span><span class="p">.</span><span class="na">create</span><span class="p">(</span><span class="s">"https://billboard3.p.rapidapi.com/hot-100?date=2022-07-07&amp;range=1-10"</span><span class="p">))</span>
+		<span class="p">.</span><span class="na">header</span><span class="p">(</span><span class="s">"X-RapidAPI-Key"</span><span class="p">,</span> <span class="s">"9e4650470emshc2461cc01c07b29p18b9b5jsnfa759ab87fca"</span><span class="p">)</span>
+		<span class="p">.</span><span class="na">header</span><span class="p">(</span><span class="s">"X-RapidAPI-Host"</span><span class="p">,</span> <span class="s">"billboard3.p.rapidapi.com"</span><span class="p">)</span>
+		<span class="p">.</span><span class="na">method</span><span class="p">(</span><span class="s">"GET"</span><span class="p">,</span> <span class="n">HttpRequest</span><span class="p">.</span><span class="na">BodyPublishers</span><span class="p">.</span><span class="na">noBody</span><span class="p">())</span>
+		<span class="p">.</span><span class="na">build</span><span class="p">();</span>
+<span class="n">HttpResponse</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">response</span> <span class="o">=</span> <span class="n">HttpClient</span><span class="p">.</span><span class="na">newHttpClient</span><span class="p">().</span><span class="na">send</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">HttpResponse</span><span class="p">.</span><span class="na">BodyHandlers</span><span class="p">.</span><span class="na">ofString</span><span class="p">());</span>
+
+
+<span class="c1">// Random r = new Random();</span>
+<span class="c1">// int rn = r.nextInt((100 - 1) + 1) + 1;</span>
+
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">response</span><span class="p">.</span><span class="na">body</span><span class="p">());</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[{"artist":"Harry Styles","title":"As It Was","image":"https://charts-static.billboard.com/img/2022/04/harry-styles-bma-as-it-was-po3-180x180.jpg","award":false,"awardsList":[],"rank":1,"weeksAtNo1":8,"lastWeek":2,"change":"up","peakPosition":1,"weeksOnChart":13},{"artist":"Jack Harlow","title":"First Class","image":"https://charts-static.billboard.com/img/2018/01/jack-harlow-i43-180x180.jpg","award":false,"awardsList":[],"rank":2,"lastWeek":3,"change":"up","peakPosition":1,"weeksOnChart":12},{"artist":"Lizzo","title":"About Damn Time","image":"https://charts-static.billboard.com/img/2022/04/lizzo-o9x-about-damn-time-f6q-180x180.jpg","award":true,"awardsList":[{"awardName":"Gains In Performance","svg":"&lt;svg xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto\" viewBox=\"0 0 128 171.211\"&gt;&lt;g data-name=\"Group 12\"&gt;&lt;path data-name=\"Path 3036\" d=\"M0 87.211v-24l64-32 64 32v24l-64-32z\" fill=\"#fcee21\"&gt;&lt;/path&gt;&lt;path data-name=\"Path 3037\" d=\"M0 127.211v-24l64-32 64 32v24l-64-32z\" fill=\"#fcee21\"&gt;&lt;/path&gt;&lt;path data-name=\"Path 3038\" d=\"M0 167.211v-24l64-32 64 32v24l-64-32z\" fill=\"#fcee21\"&gt;&lt;/path&gt;&lt;path data-name=\"Path 3039\" d=\"M24.526 59.211H44v112h40v-112h19.474L64 0zm51.474-8v112H52v-112H39.474L64 14.422l24.526 36.789z\" fill=\"#1a48c4\"&gt;&lt;/path&gt;&lt;/g&gt;&lt;/svg&gt;"}],"rank":3,"lastWeek":5,"change":"up","peakPosition":3,"weeksOnChart":11},{"artist":"Future Featuring Drake &amp; Tems","title":"Wait For U","image":"https://charts-static.billboard.com/img/1988/03/future-f8b-180x180.jpg","award":false,"awardsList":[],"rank":4,"lastWeek":4,"change":"same","peakPosition":1,"weeksOnChart":9},{"artist":"Drake Featuring 21 Savage","title":"Jimmy Cooks","image":"https://charts-static.billboard.com/img/2009/04/drake-04g-180x180.jpg","award":false,"awardsList":[],"rank":5,"lastWeek":1,"change":"down","peakPosition":1,"weeksOnChart":2},{"artist":"Kate Bush","title":"Running Up That Hill (A Deal With God)","image":"https://charts-static.billboard.com/img/2021/03/kate-bush-qv2-running-up-that-hill-1cx-180x180.jpg","award":false,"awardsList":[],"rank":6,"lastWeek":9,"change":"up","peakPosition":4,"weeksOnChart":25},{"artist":"Beyonce","title":"Break My Soul","image":"https://charts-static.billboard.com/img/2022/07/beyonce-0na-break-my-soul-kqf-180x180.jpg","award":true,"awardsList":[{"awardName":"Biggest gain in airplay","svg":"&lt;svg xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto\" viewBox=\"0 0 136 165.558\"&gt;&lt;g data-name=\"Group 9\"&gt;&lt;path data-name=\"Path 3019\" d=\"M116 65.558l-16 24h8v24h16v-24h8z\" fill=\"#fcee21\"&gt;&lt;/path&gt;&lt;path data-name=\"Path 3020\" d=\"M20 65.558l-16 24h8v24h16v-24h8z\" fill=\"#fcee21\"&gt;&lt;/path&gt;&lt;path data-name=\"Path 3021\" d=\"M88 26.47a20 20 0 10-25.1 19.316l-.2.731c-.892 3.258-2.153 7.914-3.66 13.5-3.011 11.166-7 26.056-10.991 40.948-7.971 29.779-15.913 59.561-15.913 59.561l-1.342 5.031h74.424L73.038 45.801A20.018 20.018 0 0088 26.47zm-32 0a12 12 0 1112.065 12c-.086 0-.173-.007-.256-.006A12.008 12.008 0 0156 26.47zm11.951 31.231l9.635 35.857H58.314c3.707-13.832 7.155-26.675 9.637-35.857zm-18.2 67.857a66812.91 66812.91 0 016.42-24h23.564l6.449 24zm-8.545 32c1.8-6.744 4.008-15.021 6.407-24h40.72l6.449 24z\" fill=\"#1a48c4\"&gt;&lt;/path&gt;&lt;path data-name=\"Path 3022\" d=\"M101.169 40.484a36.1 36.1 0 000-28.028l-7.368 3.116a28.1 28.1 0 010 21.8z\" fill=\"#1a48c4\"&gt;&lt;/path&gt;&lt;path data-name=\"Path 3023\" d=\"M42.2 37.368a28.1 28.1 0 010-21.8l-7.368-3.116a36.1 36.1 0 000 28.028z\" fill=\"#1a48c4\"&gt;&lt;/path&gt;&lt;path data-name=\"Path 3024\" d=\"M108.544 9.344a44.158 44.158 0 010 34.251l7.368 3.116a52.156 52.156 0 000-40.483z\" fill=\"#1a48c4\"&gt;&lt;/path&gt;&lt;path data-name=\"Path 3025\" d=\"M20.088 6.228a52.156 52.156 0 000 40.483l7.368-3.116a44.158 44.158 0 010-34.251z\" fill=\"#1a48c4\"&gt;&lt;/path&gt;&lt;path data-name=\"Path 3026\" d=\"M130.655 0l-7.368 3.116a60.216 60.216 0 010 46.707l7.368 3.116a68.214 68.214 0 000-52.939z\" fill=\"#1a48c4\"&gt;&lt;/path&gt;&lt;path data-name=\"Path 3027\" d=\"M5.345 0a68.214 68.214 0 000 52.939l7.368-3.116a60.216 60.216 0 010-46.707z\" fill=\"#1a48c4\"&gt;&lt;/path&gt;&lt;/g&gt;&lt;/svg&gt;"},{"awardName":"Gains In Performance","svg":"&lt;svg xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto\" viewBox=\"0 0 128 171.211\"&gt;&lt;g data-name=\"Group 12\"&gt;&lt;path data-name=\"Path 3036\" d=\"M0 87.211v-24l64-32 64 32v24l-64-32z\" fill=\"#fcee21\"&gt;&lt;/path&gt;&lt;path data-name=\"Path 3037\" d=\"M0 127.211v-24l64-32 64 32v24l-64-32z\" fill=\"#fcee21\"&gt;&lt;/path&gt;&lt;path data-name=\"Path 3038\" d=\"M0 167.211v-24l64-32 64 32v24l-64-32z\" fill=\"#fcee21\"&gt;&lt;/path&gt;&lt;path data-name=\"Path 3039\" d=\"M24.526 59.211H44v112h40v-112h19.474L64 0zm51.474-8v112H52v-112H39.474L64 14.422l24.526 36.789z\" fill=\"#1a48c4\"&gt;&lt;/path&gt;&lt;/g&gt;&lt;/svg&gt;"}],"rank":7,"lastWeek":15,"change":"up","peakPosition":7,"weeksOnChart":2},{"artist":"Bad Bunny &amp; Chencho Corleone","title":"Me Porto Bonito","image":"https://charts-static.billboard.com/img/2022/05/bad-bunny-c3m-me-porto-bonito-kug-180x180.jpg","award":true,"awardsList":[{"awardName":"Gains In Performance","svg":"&lt;svg xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto\" viewBox=\"0 0 128 171.211\"&gt;&lt;g data-name=\"Group 12\"&gt;&lt;path data-name=\"Path 3036\" d=\"M0 87.211v-24l64-32 64 32v24l-64-32z\" fill=\"#fcee21\"&gt;&lt;/path&gt;&lt;path data-name=\"Path 3037\" d=\"M0 127.211v-24l64-32 64 32v24l-64-32z\" fill=\"#fcee21\"&gt;&lt;/path&gt;&lt;path data-name=\"Path 3038\" d=\"M0 167.211v-24l64-32 64 32v24l-64-32z\" fill=\"#fcee21\"&gt;&lt;/path&gt;&lt;path data-name=\"Path 3039\" d=\"M24.526 59.211H44v112h40v-112h19.474L64 0zm51.474-8v112H52v-112H39.474L64 14.422l24.526 36.789z\" fill=\"#1a48c4\"&gt;&lt;/path&gt;&lt;/g&gt;&lt;/svg&gt;"}],"rank":8,"lastWeek":11,"change":"up","peakPosition":7,"weeksOnChart":8},{"artist":"Glass Animals","title":"Heat Waves","image":"https://charts-static.billboard.com/img/2020/07/glass-animals-rtd-heat-waves-o3i-180x180.jpg","award":false,"awardsList":[],"rank":9,"lastWeek":10,"change":"up","peakPosition":1,"weeksOnChart":76},{"artist":"Joji","title":"Glimpse Of Us","image":"https://charts-static.billboard.com/img/2022/06/joji-77h-glimpse-of-us-gt3-180x180.jpg","award":false,"awardsList":[],"rank":10,"lastWeek":8,"change":"down","peakPosition":8,"weeksOnChart":3}]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><a class="u-url" href="/fastpages/jupyter/2022/10/02/rapidapi.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/fastpages/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/fastpages/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/fastpages/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An APCSA masterclass</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/peacekeeper6" target="_blank" title="peacekeeper6"><svg class="svg-icon grey"><use xlink:href="/fastpages/assets/minima-social-icons.svg#github"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
