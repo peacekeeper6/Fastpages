@@ -261,6 +261,30 @@ window.onload = wrap_img;
 </div>
     
 
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="n">HttpRequest</span> <span class="n">request</span> <span class="o">=</span> <span class="n">HttpRequest</span><span class="p">.</span><span class="na">newBuilder</span><span class="p">()</span>
+		<span class="p">.</span><span class="na">uri</span><span class="p">(</span><span class="n">URI</span><span class="p">.</span><span class="na">create</span><span class="p">(</span><span class="s">"https://billboard3.p.rapidapi.com/hot-100?date=2022-07-07&amp;range=1-10"</span><span class="p">))</span>
+		<span class="p">.</span><span class="na">header</span><span class="p">(</span><span class="s">"X-RapidAPI-Key"</span><span class="p">,</span> <span class="s">"9e4650470emshc2461cc01c07b29p18b9b5jsnfa759ab87fca"</span><span class="p">)</span>
+		<span class="p">.</span><span class="na">header</span><span class="p">(</span><span class="s">"X-RapidAPI-Host"</span><span class="p">,</span> <span class="s">"billboard3.p.rapidapi.com"</span><span class="p">)</span>
+		<span class="p">.</span><span class="na">method</span><span class="p">(</span><span class="s">"GET"</span><span class="p">,</span> <span class="n">HttpRequest</span><span class="p">.</span><span class="na">BodyPublishers</span><span class="p">.</span><span class="na">noBody</span><span class="p">())</span>
+		<span class="p">.</span><span class="na">build</span><span class="p">();</span>
+<span class="n">HttpResponse</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">response</span> <span class="o">=</span> <span class="n">HttpClient</span><span class="p">.</span><span class="na">newHttpClient</span><span class="p">().</span><span class="na">send</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">HttpResponse</span><span class="p">.</span><span class="na">BodyHandlers</span><span class="p">.</span><span class="na">ofString</span><span class="p">());</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">response</span><span class="p">.</span><span class="na">body</span><span class="p">());</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
