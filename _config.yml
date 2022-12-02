@@ -1,3 +1,4 @@
+{% include file.ext param='value' param2='value' %}
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog.
