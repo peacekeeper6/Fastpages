@@ -2,7 +2,7 @@
   
     
         "post0": {
-            "title": "Unit 9 Recursion",
+            "title": "Unit 10 Recursion",
             "content": "Notes . Recursive method is a method that calls itself. It will have at least one base case that will eventually halt the recursion | Binary search: taking first and last numbers, then find midpoint until we can narrow the term down | Can use recursion with binary search | Merge sort is another method to search with recursion | Merge sort divides the array into halves, then calls itself for the two different halves in order to sort them. It merges the two sorted halves into one list | Recursion trees can be used to visualize a recursive call | With recursion trees, you can trace down every call until the base case | .",
             "url": "https://peacekeeper6.github.io/fastpages/java/2022/12/13/unit10-hw.html",
             "relUrl": "/java/2022/12/13/unit10-hw.html",
