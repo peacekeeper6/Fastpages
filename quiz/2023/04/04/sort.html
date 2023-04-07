@@ -159,6 +159,13 @@ window.onload = wrap_img;
         <span class="n">sorts</span><span class="o">++</span><span class="p">;</span>
        <span class="p">}</span>
     <span class="p">}</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span><span class="o">[]</span> <span class="nf">randomArray</span><span class="p">()</span> <span class="p">{</span>
+        <span class="kt">int</span><span class="o">[]</span> <span class="n">array</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="mi">5001</span><span class="o">]</span><span class="p">;</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">array</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">array</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="p">(</span><span class="n">Math</span><span class="p">.</span><span class="na">random</span><span class="p">());</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="n">array</span><span class="p">;</span>
+    <span class="p">}</span>
     <span class="kd">public</span> <span class="kt">void</span> <span class="nf">toString</span><span class="p">(</span><span class="kt">int</span> <span class="n">numArray</span><span class="o">[]</span><span class="p">)</span> <span class="p">{</span>
         <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">numArray</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
             <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">numArray</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">+</span> <span class="s">" "</span><span class="p">);</span>
@@ -171,8 +178,11 @@ window.onload = wrap_img;
         <span class="kt">long</span> <span class="n">startTime</span> <span class="o">=</span> <span class="n">System</span><span class="p">.</span><span class="na">nanoTime</span><span class="p">();</span>
         <span class="kt">long</span> <span class="n">endTime</span> <span class="o">=</span> <span class="n">System</span><span class="p">.</span><span class="na">nanoTime</span><span class="p">();</span>
         <span class="kt">long</span> <span class="n">time</span> <span class="o">=</span> <span class="n">endTime</span> <span class="o">-</span> <span class="n">startTime</span><span class="p">;</span>
+        <span class="kt">int</span><span class="o">[]</span> <span class="n">arr</span> <span class="o">=</span> <span class="n">randomArray</span><span class="p">();</span>
         <span class="n">Sorts</span> <span class="n">sorts</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Sorts</span><span class="p">();</span>
         <span class="n">sorts</span><span class="p">.</span><span class="na">insertionSort</span><span class="p">(</span><span class="n">numArray</span><span class="p">);</span>
+        <span class="n">sorts</span><span class="p">.</span><span class="na">insertionSort</span><span class="p">(</span><span class="n">arr</span><span class="p">);</span>
+        <span class="c1">// sorts.toString(arr);</span>
         <span class="n">sorts</span><span class="p">.</span><span class="na">toString</span><span class="p">(</span><span class="n">numArray</span><span class="p">);</span>
         <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"time: "</span> <span class="o">+</span> <span class="n">time</span><span class="p">);</span>
     <span class="p">}</span>
@@ -200,7 +210,7 @@ window.onload = wrap_img;
 7 
 9 
 comparisons: 11
-sorts: 8
+sorts: 5008
 time: 100
 </pre>
 </div>
