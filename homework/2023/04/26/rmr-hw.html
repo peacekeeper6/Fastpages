@@ -780,7 +780,7 @@ false
     <span class="p">}</span>
     <span class="kd">public</span> <span class="kt">void</span> <span class="nf">removeOddElements</span><span class="p">()</span> <span class="p">{</span>
         <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">seatingChart</span><span class="p">.</span><span class="na">size</span><span class="p">();</span> <span class="n">i</span> <span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">seatingChart</span><span class="p">.</span><span class="na">remove</span><span class="p">(</span><span class="n">seatingChart</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">i</span><span class="p">));</span>
+            <span class="n">seatingChart</span><span class="p">.</span><span class="na">remove</span><span class="p">(</span><span class="n">seatingChart</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">i</span><span class="p">));</span> <span class="c1">//this is why removeAll() exists</span>
         <span class="p">}</span>
     <span class="p">}</span>
     <span class="kd">public</span> <span class="kt">void</span> <span class="nf">printArrayList</span><span class="p">()</span> <span class="p">{</span>
