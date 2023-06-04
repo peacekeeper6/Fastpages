@@ -27,7 +27,7 @@ title: JavaScript Exit Ticket
         const resultContainer = document.getElementById("result");
       
         // prepare fetch options
-        const url = "https://localhost:8032/api/students";
+        const url = "https://localhost:8032/api/students/";
       
         const options = {
           method: 'GET',
