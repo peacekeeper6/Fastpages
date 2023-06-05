@@ -131,7 +131,11 @@ window.onload = wrap_img;
       
         const options = {
           method: 'GET',
-          credentials: 'include'
+          credentials: 'include',
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify;
         };
       
         // fetch the API
