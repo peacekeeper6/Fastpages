@@ -8,6 +8,15 @@ title: JavaScript Exit Ticket
 ---
 
 <body>
+<style>
+        #searchForm {
+            text-align: center;
+            margin-top: 50px;
+        }
+        #searchResults {
+            margin-top: 20px;
+        }
+    </style>
     <table>
         <thead>
         <tr>
@@ -31,10 +40,7 @@ title: JavaScript Exit Ticket
       
         const options = {
           method: 'GET',
-          <!-- headers: {
-              'X-RapidAPI-Key': '9e4650470emshc2461cc01c07b29p18b9b5jsnfa759ab87fca',
-              'X-RapidAPI-Host': 'billboard3.p.rapidapi.com'
-          } -->
+          credentials: 'include'
         };
       
         // fetch the API
@@ -92,4 +98,39 @@ title: JavaScript Exit Ticket
           resultContainer.appendChild(tr);
         });
       </script>
+      <div id="searchForm">
+        <form id="searchForm">
+            <input type="text" id="searchInput" placeholder="Search">
+        </form>
+    </div>
+
+    <ul id="searchResults"></ul>
+    <script>
+        var tableRows = Array.from(document.getElementById('dataTable').getElementsByTagName('tr'));
+        tableRows.shift(); // Remove the table header row
+
+        function displayResults(searchTerm) {
+            var resultsContainer = document.getElementById('searchResults');
+            resultsContainer.innerHTML = '';
+
+            tableRows.forEach(function(row) {
+                var rowData = Array.from(row.getElementsByTagName('td'));
+
+                var keywordFound = rowData.some(function(cell) {
+                    return cell.textContent.toLowerCase().includes(searchTerm.toLowerCase());
+                });
+
+                if (keywordFound) {
+                    var li = document.createElement('li');
+                    li.textContent = rowData[0].textContent; // Display the first cell value (Product Name)
+                    resultsContainer.appendChild(li);
+                }
+            });
+        }
+
+        document.getElementById('searchInput').addEventListener('input', function() {
+            var searchTerm = this.value;
+            displayResults(searchTerm);
+        });
+    </script>
 </body>
