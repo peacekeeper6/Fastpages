@@ -40,11 +40,7 @@ title: JavaScript Exit Ticket
       
         const options = {
           method: 'GET',
-          credentials: 'include',
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify{{name, college, team}};
+          credentials: 'include'
         };
       
         // fetch the API
